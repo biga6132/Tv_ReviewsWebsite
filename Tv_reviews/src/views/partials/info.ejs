@@ -1,0 +1,87 @@
+<!--
+  TODO: Update the EJS code to insert the following information:
+    - display_title
+    - url
+    - suggested_link_text
+    - publication_date
+    - summary_short
+
+  HINT: Not sure how to display the reviews, check out Bootstrap cards here: https://getbootstrap.com/docs/4.0/components/card/
+-->
+
+<%
+  if (items) {
+  var thing = '';
+  info = items[0];
+
+    thing = `
+      <div class = "row">
+        <div class="col-md-4">
+          <img src="${info.show.image.medium}" class="thumnail">
+        </div>
+        <div class="col-md-8">
+          <h2>${info.show.name}</h2>
+          <ul class="list-group">
+            <li class="list-group-item"><strong>Genre:</strong> ${info.show.genres} </li>
+            <li class="list-group-item"><strong>Summary:</strong> ${info.show.summary}</li>
+            <li class="list-group-item"><strong>Rating:</strong> ${info.show.rating.average}</li>
+          </ul>
+          <div class="text-align">
+            <a
+              href="#myModal"
+              class="btn btn-info"
+              data-toggle="modal"
+              >Add Review</a
+            >
+          </div>
+          <div id="myModal" class="modal fade">
+            <div class="modal-dialog modal-login">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4>Add review here</h4>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-hidden="true"
+                  >
+                  &times
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form action="/Review" method="post">
+                  <div class="form-group">
+                    <label><strong>Tv Show Name: </strong></label>
+                    <input type="text" class="form-control" id="tv_name" name="tv_name" value="${info.show.name}" readonly>
+                  </div>
+                  <div class="form-group">
+                    <label><strong>Enter you review below:</strong> </label>
+                    <div class="col-md-9>">
+                      <textarea class="form-control" name="tv_review" rows="10" cols="50"> </textarea>
+                  </div>
+                  </div>
+                  <div class="form-group">
+                    <button
+                      id="my_submit_button"
+                      class="btn btn-primary btn-block login-btn"
+                    >
+                      Submit
+                    </button>
+                  </div>
+                </form>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+
+      </div>
+      
+    `;
+
+%>
+    <%- thing %>
+<% } %>
