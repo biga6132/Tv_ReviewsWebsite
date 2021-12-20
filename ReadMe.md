@@ -6,10 +6,13 @@ The application is a website that displays TV Show information from an API calle
 There is also a small button that allows you to submit a review of your own, after submitting your review, it is stored in a PostgreSQL database and can be viewed in the Reviews tab of the website.
 
 How to Run:
-Run Locally:
-    Step 1: Go to terminal and go to Tv_reviews folder
-    Step 2: Run the command "Docker-compose up"
-    Step 3: Go to your browser and type in "http://localhost:3000/" as url
-
-If running locally doesn't work, it is deployed on heroku
+It is deployed on heroku
 Link: https://biswas-individual-project.herokuapp.com/
+
+if you would rather run locally:
+    Step 1: Download Docker desktop and Docker on computer to run application
+    Step 2: Go to terminal and go to Tv_reviews folder
+    Step 3: Run the command "Docker-compose up"
+    Step 4: Go to your browser and type in "http://localhost:3000/" as url
+
+
