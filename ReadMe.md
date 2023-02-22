@@ -12,9 +12,9 @@ Link: https://biswas-individual-project.herokuapp.com/
 
 If you would rather run locally:
 
-1: Download Docker desktop and Docker on computer to run application
-2: Go to terminal and go to Tv_reviews folder
-3: Run the command "Docker-compose up"
-4: Go to your browser and type in "http://localhost:3000/" as url
+1. Download Docker desktop and Docker on computer to run application
+2. Go to terminal and go to Tv_reviews folder
+3. Run the command "Docker-compose up"
+4. Go to your browser and type in "http://localhost:3000/" as url
 
 
