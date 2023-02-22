@@ -6,7 +6,7 @@ There is also a small button that allows you to submit a review of your own, aft
 
 ## How to Run:
 
-Link: https://biswas-individual-project.herokuapp.com/
+<!--- Link: https://biswas-individual-project.herokuapp.com/ -->
 
 1. Download Docker desktop and Docker on computer to run application
 2. Go to terminal and go to Tv_reviews folder
